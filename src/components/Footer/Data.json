@@ -1,0 +1,12 @@
+{
+  "offices": [
+    {
+      "country": "AccelOne - USA",
+      "location": "Seattle / Bay Area / Orange County"
+    },
+    {
+      "country": "AccelOne - Argentina",
+      "location": "Buenos Aires"
+    }
+  ]
+}
