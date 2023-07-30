@@ -43,12 +43,12 @@ export default createTheme({
         {
           props: { variant: 'contained' },
           style: {
-            backgroundColor: colors['orange-primary'],
+            backgroundColor: colors['green-primary'],
             '&:hover': {
-              backgroundColor: colors['orange-darker'],
+              backgroundColor: colors['green-darker'],
             },
             '&:disabled': {
-              backgroundColor: colors['orange-primary'],
+              backgroundColor: colors['green-primary'],
             },
           },
         },
@@ -56,14 +56,14 @@ export default createTheme({
           props: { variant: 'outlined' },
           style: {
             backgroundColor: colors.white,
-            border: `2px solid ${colors['orange-primary']}`,
+            border: `2px solid ${colors['green-primary']}`,
             '&:hover': {
-              border: `2px solid ${colors['orange-darker']}`,
+              border: `2px solid ${colors['green-darker']}`,
               backgroundColor: colors.white,
             },
             '&:disabled': {
               backgroundColor: colors.white,
-              border: `2px solid ${colors['orange-primary']}`,
+              border: `2px solid ${colors['green-primary']}`,
             },
           },
         },
@@ -74,7 +74,7 @@ export default createTheme({
             textDecoration: 'underline',
             color: colors.black,
             '&:hover': {
-              color: colors['orange-darker'],
+              color: colors['green-darker'],
               backgroundColor: colors.white,
               textDecoration: 'underline',
             },
@@ -89,12 +89,12 @@ export default createTheme({
           style: {
             padding: '1.25rem',
             borderRadius: 999,
-            backgroundColor: colors['orange-primary'],
+            backgroundColor: colors['green-primary'],
             '&:hover': {
-              backgroundColor: colors['orange-darker'],
+              backgroundColor: colors['green-darker'],
             },
             '&:disabled': {
-              backgroundColor: colors['orange-primary'],
+              backgroundColor: colors['green-primary'],
             },
             '& .MuiButton-endIcon': {
               marginLeft: '3.125rem',

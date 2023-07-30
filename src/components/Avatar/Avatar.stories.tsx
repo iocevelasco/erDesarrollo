@@ -8,8 +8,8 @@ type AvatarProps = React.ComponentProps<typeof Avatar> & { isA1: boolean }
 const Template = (args: AvatarProps) => {
   const customArgs: AvatarProps = {
     className: args.isA1
-      ? '!bg-orange-primary !text-black'
-      : '!bg-black !text-orange-darker',
+      ? '!bg-green-primary !text-black'
+      : '!bg-black !text-green-darker',
     variant: args.isA1 ? 'circular' : 'square',
     children: args.isA1 ? 'A1' : <PersonIcon />,
     ...args,

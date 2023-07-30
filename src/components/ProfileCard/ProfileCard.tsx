@@ -58,7 +58,7 @@ export const ProfileCard: React.FC<ProfileCardProps> = ({
           </Typography>
           <Typography
             variant="caption"
-            className="block !tracking-[0.24px] pt-2.5 underline text-orange-darker !font-semibold"
+            className="block !tracking-[0.24px] pt-2.5 underline text-green-darker !font-semibold"
           >
             View profile
           </Typography>

@@ -4,7 +4,6 @@ import { Footer, Navbar, type NavLinkData, ChatBot } from '@/components'
 import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry'
 import { APP_ROOT_ID } from '@/utils/constants'
 import getRalewayFont from '@/utils/functions/getRalewayFont'
-import { getStrapiMedia, getStrapiURL } from '@/utils/api-helpers'
 import './globals.css'
 import { Metadata } from 'next'
 

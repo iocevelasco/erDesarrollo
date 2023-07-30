@@ -13,7 +13,7 @@ export const OptionSelect = ({ options, value, className }: OptionsProps) => {
         <Button
           className={`${
             value === option.value
-              ? 'bg-orange-darker text-black font-bold'
+              ? 'bg-green-darker text-black font-bold'
               : 'bg-gray-dark text-white font-normal'
           }`}
           onClick={option.onClick}

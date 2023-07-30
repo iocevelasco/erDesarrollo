@@ -2,7 +2,6 @@
 
 import { useRef, useState, ChangeEvent, KeyboardEvent, useMemo } from 'react'
 import { Drawer, useMediaQuery } from '@mui/material'
-import { ReactComponent as AccelOneLogo } from '@/assets/Images/AccelOne AI.svg'
 import { Prompt } from '../Prompt/Prompt'
 import { isBrowser } from '@/utils/constants'
 import ChatFooter from './ChatFooter'
@@ -70,7 +69,7 @@ export const ChatContainer = () => {
             open === false ? 'absolute w-full' : ''
           }`}
         >
-          <AccelOneLogo />
+          Contactanos
         </div>
         <ChatMessages messages={memoizeMessages} isLoading={disabled} />
         <div className="absolute bottom-0 w-full shadow-4xl bg-gray-pale py-5 px-2.5 mt-2">

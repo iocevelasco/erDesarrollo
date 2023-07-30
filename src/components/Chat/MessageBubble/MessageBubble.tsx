@@ -11,8 +11,8 @@ export const MessageBubble = ({ text, sender }: MessageBubbleProps) => {
   const variant = sender === 'user' ? 'circular' : 'square'
   const className =
     sender === 'user'
-      ? '!bg-orange-primary !text-black'
-      : '!bg-black !text-orange-darker'
+      ? '!bg-green-primary !text-black'
+      : '!bg-black !text-green-darker'
   const icon = sender === 'user' ? 'A1' : <PersonIcon />
   return (
     <div className={`flex w-full gap-5 shadow-4xl p-5 rounded-md`}>

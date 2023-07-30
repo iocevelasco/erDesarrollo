@@ -16,7 +16,7 @@ export default function HomePage() {
         </Typography>
         <Typography variant="subtitle1" className="text-black !font-light">
           The nearshore solution for your industry{' '}
-          <span className="font-bold text-orange-primary">FINTECH</span>
+          <span className="font-bold text-green-primary">FINTECH</span>
         </Typography>
         <Button
           variant="iconButton"

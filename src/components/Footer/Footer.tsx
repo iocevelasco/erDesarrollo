@@ -15,7 +15,7 @@ export const AddressTag = ({ country, location }: AddressProps) => {
         <LocationIcon
           width="1.2rem"
           height="1.2rem"
-          className="text-orange-primary"
+          className="text-green-primary"
         />
         <Typography className="!font-bold">{country}</Typography>
       </div>

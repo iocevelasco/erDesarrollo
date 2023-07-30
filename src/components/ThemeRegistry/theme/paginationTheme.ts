@@ -14,12 +14,12 @@ export default createTheme({
             fontWeight: 500,
           },
           '.MuiPaginationItem-root.Mui-selected': {
-            background: colors['orange-darker'],
+            background: colors['green-darker'],
             fontWeight: 700,
             color: colors.white,
             borderRadius: '5px',
             '&:hover': {
-              background: colors['orange-primary'],
+              background: colors['green-primary'],
               color: colors.black,
             },
           },

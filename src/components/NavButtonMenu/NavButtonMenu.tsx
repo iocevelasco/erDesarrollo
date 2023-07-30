@@ -43,8 +43,8 @@ export default function NavButtonMenu({
       <Button
         variant="text"
         onClick={handleClick}
-        className={`group/link flex flex-col items-end text-sm font-semibold leading-[var(--link)] lg:items-center !no-underline uppercase text-gray-dark h-full min-h-[2.5em] p-0 after:content-[''] after:block after:w-full after:border-b-[0.325rem] after:border-gray-pale after:transition-colors after:duration-500 after:mt-auto hover:after:border-orange-primary ${
-          activeSubTab ? 'after:border-orange-primary' : ''
+        className={`group/link flex flex-col items-end text-sm font-semibold leading-[var(--link)] lg:items-center !no-underline uppercase text-gray-dark h-full min-h-[2.5em] p-0 after:content-[''] after:block after:w-full after:border-b-[0.325rem] after:border-gray-pale after:transition-colors after:duration-500 after:mt-auto hover:after:border-green-primary ${
+          activeSubTab ? 'after:border-green-primary' : ''
         } `}
       >
         {buttonMenuText}
@@ -83,7 +83,7 @@ export default function NavButtonMenu({
               href={subMenuItem.href}
             >
               {subMenuItem.text}
-              <span className="w-full block border-l-[0.325rem] border-gray-pale group-hover/link:border-orange-primary transition-colors duration-500 mr-[0.625rem] h-[1.25rem]"></span>
+              <span className="w-full block border-l-[0.325rem] border-gray-pale group-hover/link:border-green-primary transition-colors duration-500 mr-[0.625rem] h-[1.25rem]"></span>
             </Link>
           </MenuItem>
         ))}

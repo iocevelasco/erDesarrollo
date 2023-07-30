@@ -1,8 +1,8 @@
 import { fetchAPI } from '@/utils/fetch-api'
-import { NEXT_PUBLIC_STRAPI_API_TOKEN } from '@/utils/config'
+//import { NEXT_PUBLIC_STRAPI_API_TOKEN } from '@/utils/config'
 
 export default async function getGlobal(): Promise<any> {
-  const token = NEXT_PUBLIC_STRAPI_API_TOKEN
+  const token = '1234'
 
   if (!token)
     throw new Error('The Strapi API Token environment variable is not set.')

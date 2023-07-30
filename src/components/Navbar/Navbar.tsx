@@ -6,7 +6,7 @@ import { MenuDrawer, NavButtonMenu, NavLink } from '@/components'
 import { Button } from '@mui/material'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
-
+import Image from 'next/image'
 export interface NavLinkData {
   id: number
   href: string
@@ -50,7 +50,7 @@ export default function Navbar({
     <div className="sticky z-[999] !p-5 lg:px-0 bg-white top-0 h-navbar">
       <div className="container flex justify-between items-center	h-16 mx-auto px-0 w-full">
         <Link href="/">
-          <A1Logo width={'8.625rem'} height={'2.75rem'} />
+          <Image width={200} height={80} alt='logo' src='http://erdesarrollo.com.ve/wp-content/uploads/2020/04/cropped-Logo-ErDesarrollo-pequeno-2.png' />
         </Link>
         <div className="hidden lg:flex lg:items-center h-fit gap-x-[3.125rem]">
           <div className="flex">

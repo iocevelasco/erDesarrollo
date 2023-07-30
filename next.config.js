@@ -14,7 +14,7 @@ const nextConfig = {
     },
   },
   images: {
-    domains: ['i.imgur.com', 'strapi-content-webv3.s3.amazonaws.com'],
+    domains: ['i.imgur.com', 'strapi-content-webv3.s3.amazonaws.com', 'erdesarrollo.com.ve'],
     remotePatterns: [
       {
         protocol: 'https',

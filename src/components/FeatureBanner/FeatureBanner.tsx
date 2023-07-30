@@ -22,7 +22,7 @@ export default function FeatureBanner({
   return (
     <div className="min-h-[20rem] flex flex-col p-8 relative justify-end bg-white">
       <div className="relative z-10">
-        <Typography variant="subtitle1" className="z-10 text-orange-primary">
+        <Typography variant="subtitle1" className="z-10 text-green-primary">
           {title}
         </Typography>
         <Typography variant="h3" className="z-10 text-white">
