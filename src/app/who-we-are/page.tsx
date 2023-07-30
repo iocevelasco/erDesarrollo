@@ -1,25 +1,31 @@
 import React from 'react'
-import { getPageBySlug } from '@/utils/get-page-by-slug'
-import { PageResponse } from '@/types/page'
-import { SectionsBuilder } from '@/components/Sections/SectionsBuilder/SectionsBuilder'
+import { mock } from './mock'
+import { Content } from './Content'
+import { ProfileCardProps } from '@/components/ProfileCard/ProfileCard'
+import { SectionHeading } from '@/components'
 
-async function getData() {
-  const data = await getPageBySlug('who-we-are', 'en')
-  return data.data as PageResponse
+export interface ContentProps {
+  title: string
+  description: string
+  profileCards: ProfileCardProps[]
+  bottomContent: string
 }
 
-const WhoWeAre = async () => {
-  const data: PageResponse = await getData()
+async function getData() {
+  return mock as ContentProps
+}
+
+const WorkWithUsPage = async () => {
+  const data: ContentProps = await getData()
+
   return (
-    <div className="page-wrapper">
-      <div className="w-[880px] max-w-full m-auto max-lg:px-8">
-        <SectionsBuilder
-          title={data[0].attributes.heading}
-          contentSections={data[0].attributes.contentSections}
-        />
+    <div className="page-wrapper flex flex-col gap-6 p-1 md:p-16 md:pt-8">
+      <div className="w-[880px] max-w-full m-auto max-lg:px-8 pb-28">
+        <SectionHeading title={data.title} caption={data.description} />
+        <Content {...data} />
       </div>
     </div>
   )
 }
 
-export default WhoWeAre
+export default WorkWithUsPage
